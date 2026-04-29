@@ -1,0 +1,89 @@
+Exception in thread Thread-9:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/utils/stoppablethread.py", line 130, in _wrapped_target
+    self._target()
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/utils/stoppablethread.py", line 205, in run
+    make_update_loop(self, self._update)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/utils/stoppablethread.py", line 175, in make_update_loop
+    update_func()
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/controller.py", line 163, in update
+    self.get_present_position_speed_load(self.working_motors)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/controller.py", line 168, in get_present_position_speed_load
+    values = self.io.get_present_position_speed_load(ids)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 358, in my_getter
+    return self._get_control_value(control, ids, **kwargs)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 390, in _get_control_value
+    _force_lock=True)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 534, in _send_packet
+    sp = self.__real_send(instruction_packet, wait_for_status_packet, _force_lock)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 499, in __real_send
+    status_packet = self.__real_read(instruction_packet, _force_lock=True)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 510, in __real_read
+    data = self._serial.read(self._protocol.DxlPacketHeader.length)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/serial/serialposix.py", line 596, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+Exception in thread Thread-10:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/utils/stoppablethread.py", line 130, in _wrapped_target
+    self._target()
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/utils/stoppablethread.py", line 205, in run
+    make_update_loop(self, self._update)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/utils/stoppablethread.py", line 175, in make_update_loop
+    update_func()
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/controller.py", line 59, in update
+    if self.mode == 'get' else
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/controller.py", line 129, in get_register
+    values = self.io.get_angle_limit(ids)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 358, in my_getter
+    return self._get_control_value(control, ids, **kwargs)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 390, in _get_control_value
+    _force_lock=True)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 534, in _send_packet
+    sp = self.__real_send(instruction_packet, wait_for_status_packet, _force_lock)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 499, in __real_send
+    status_packet = self.__real_read(instruction_packet, _force_lock=True)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 516, in __real_read
+    data += self._serial.read(header.packet_length)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/serial/serialposix.py", line 596, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+
+Exception in thread Thread-12:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/threading.py", line 917, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.7/threading.py", line 865, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/utils/stoppablethread.py", line 130, in _wrapped_target
+    self._target()
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/utils/stoppablethread.py", line 205, in run
+    make_update_loop(self, self._update)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/utils/stoppablethread.py", line 175, in make_update_loop
+    update_func()
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/controller.py", line 59, in update
+    if self.mode == 'get' else
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/controller.py", line 72, in get_register
+    getter(ids))
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 358, in my_getter
+    return self._get_control_value(control, ids, **kwargs)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 390, in _get_control_value
+    _force_lock=True)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 534, in _send_packet
+    sp = self.__real_send(instruction_packet, wait_for_status_packet, _force_lock)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 499, in __real_send
+    status_packet = self.__real_read(instruction_packet, _force_lock=True)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/pypot/dynamixel/io/abstract_io.py", line 510, in __real_read
+    data = self._serial.read(self._protocol.DxlPacketHeader.length)
+  File "/home/poppy/pyenv/lib/python3.7/site-packages/serial/serialposix.py", line 596, in read
+    'device reports readiness to read but returned no data '
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
