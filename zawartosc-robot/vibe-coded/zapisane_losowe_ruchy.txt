@@ -1,0 +1,154 @@
+['head', 'r_arm', 'l_arm', 'arms']
+[<DxlMotor name=head_z id=36 pos=2.79>, <DxlMotor name=head_y id=37 pos=49.650000000000006>, <DxlMotor name=l_shoulder_y id=41 pos=-92.86>, <DxlMotor name=l_shoulder_x id=42 pos=10.920000000000002>, <DxlMotor name=l_elbow_y id=44 pos=15.489999999999995>, <DxlMotor name=r_shoulder_y id=51 pos=-84.42>, <DxlMotor name=r_shoulder_x id=52 pos=-68.86>, <DxlMotor name=r_elbow_y id=54 pos=46.18>]
+starting in:  0
+starting in:  1
+starting in:  2
+starting in:  3
+starting in:  4
+Recording started...
+
+Time: 0s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -92.95
+l_shoulder_x: 10.75
+l_elbow_y: 34.57
+r_shoulder_y: -83.89
+r_shoulder_x: -44.59
+r_elbow_y: 46.09
+
+Time: 1s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -92.95
+l_shoulder_x: 10.75
+l_elbow_y: 34.57
+r_shoulder_y: -83.89
+r_shoulder_x: -44.59
+r_elbow_y: 46.09
+
+Time: 2s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -92.95
+l_shoulder_x: 10.75
+l_elbow_y: 34.57
+r_shoulder_y: -83.98
+r_shoulder_x: -44.59
+r_elbow_y: 46.09
+
+Time: 3s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -93.03
+l_shoulder_x: 10.75
+l_elbow_y: 16.11
+r_shoulder_y: -162.13
+r_shoulder_x: -75.98
+r_elbow_y: 43.19
+
+Time: 4s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -93.03
+l_shoulder_x: 10.75
+l_elbow_y: -51.49
+r_shoulder_y: -163.19
+r_shoulder_x: -113.52
+r_elbow_y: 42.84
+
+Time: 5s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -92.59
+l_shoulder_x: 10.48
+l_elbow_y: 11.89
+r_shoulder_y: -158.53
+r_shoulder_x: -105.78
+r_elbow_y: 46.00
+
+Time: 6s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -92.51
+l_shoulder_x: 10.48
+l_elbow_y: 19.71
+r_shoulder_y: -80.64
+r_shoulder_x: -44.15
+r_elbow_y: 45.38
+
+Time: 7s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -92.51
+l_shoulder_x: 10.48
+l_elbow_y: 33.08
+r_shoulder_y: -82.92
+r_shoulder_x: -44.15
+r_elbow_y: 45.38
+
+Time: 8s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -92.51
+l_shoulder_x: 10.48
+l_elbow_y: 33.08
+r_shoulder_y: -83.01
+r_shoulder_x: -44.15
+r_elbow_y: 45.38
+
+Time: 9s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -104.20
+l_shoulder_x: 31.05
+l_elbow_y: 16.29
+r_shoulder_y: -122.04
+r_shoulder_x: -78.09
+r_elbow_y: 42.92
+
+Time: 10s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -111.14
+l_shoulder_x: 85.47
+l_elbow_y: 15.14
+r_shoulder_y: -194.48
+r_shoulder_x: -73.60
+r_elbow_y: -11.23
+
+Time: 11s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -110.70
+l_shoulder_x: 42.31
+l_elbow_y: -14.57
+r_shoulder_y: -131.45
+r_shoulder_x: -64.90
+r_elbow_y: -10.70
+
+Time: 12s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -83.27
+l_shoulder_x: 1.34
+l_elbow_y: 14.97
+r_shoulder_y: -81.25
+r_shoulder_x: -40.11
+r_elbow_y: 30.70
+
+Time: 13s
+head_z: 2.79
+head_y: 49.65
+l_shoulder_y: -86.53
+l_shoulder_x: 1.25
+l_elbow_y: 34.04
+r_shoulder_y: -83.36
+r_shoulder_x: -40.46
+r_elbow_y: 37.30
+Press 'x' and hit Enter to stop recording...
+x
+Recording stopped.
+
+Stopping recorder...
+end

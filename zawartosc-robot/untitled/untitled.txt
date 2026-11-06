@@ -1,0 +1,34 @@
+import time
+import picamera
+import cv2
+import numpy as np
+
+# Create an instance of the PiCamera
+with picamera.PiCamera() as camera:
+    # Set resolution (optional)
+    camera.resolution = (640, 480)
+
+    # Start the preview (display feed on screen)
+    camera.start_preview(fullscreen=False, window=(100, 100, 640, 480))
+
+    # Let the camera warm up for a moment
+    time.sleep(2)
+
+    # Create an OpenCV window
+    cv2.namedWindow("Live Feed", cv2.WINDOW_NORMAL)
+
+    # Capture video from the PiCamera
+    while True:
+        # Capture a frame from the camera
+        frame = np.empty((480, 640, 3), dtype=np.uint8)
+        camera.capture(frame, 'bgr')
+        
+        # Display the frame using OpenCV
+        cv2.imshow("Live Feed", frame)
+
+        # Check for a key press to stop the feed (press 'q' to exit)
+        if cv2.waitKey(1) & 0xFF == ord('q'):
+            break
+
+    # Close the OpenCV window
+    cv2.destroyAllWindows()
